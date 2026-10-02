@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Эко клиника · клиника восточной медицины</title>
+<meta name="description" content="Эко клиника в Москве у метро Беговая: приём рефлексотерапевта, иглоукалывание, мануальная терапия, невролог и психолог. Прайс-лист на сайте, запись по телефону.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Эко клиника">
+<meta property="og:title" content="Эко клиника: иглоукалывание и восточная медицина в Москве">
+<meta property="og:description" content="Приём врачей и восточные методики у метро Беговая. Прайс-лист на сайте, запись по телефону.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%274%27 y=%274%27 width=%2724%27 height=%2724%27 rx=%2710%27 fill=%27%233b4fa3%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%275%27 fill=%27%23f4f5f9%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalClinic","name":"Эко клиника","description":"Клиника восточной медицины: приём врачей, иглоукалывание, мануальная терапия.","telephone":"+7 (903) 967-06-80","openingHours":"Mo-Fr 09:00-18:00","address":{"@type":"PostalAddress","streetAddress":"2-й Хорошёвский проезд, 7, корпус 1","addressLocality":"Москва","addressCountry":"RU"}}
+</script>
+<style>
+  /* ---- тема: шесть цветов, два шрифта. Палитра В «молочный + индиго» ---- */
+  .v-page {
+    --v-canvas: #f4f5f9; --v-surface: #ffffff;
+    --v-ink: #1e2233; --v-ink-soft: #5a5f74;            /* 5,9:1 на холсте */
+    --v-accent: #3b4fa3; --v-accent-ink: #f5f6fc;       /* кнопка 4,6:1 */
+    --v-accent-deep: #2f4088;                           /* мелкий акцентный текст: цены, номера вопросов, 6,0:1 */
+    --v-font-display: "Rubik", "Arial Rounded MT Bold", system-ui, sans-serif;
+    --v-font-text: "Manrope", "Segoe UI", system-ui, sans-serif;
+    --v-display-weight: 500;
+    --v-track-tight: -0.02em;
+    --v-shadow-color: 36 42 70;
+    --v-e1: 0 1px 2px rgb(var(--v-shadow-color) / .06), 0 8px 22px rgb(var(--v-shadow-color) / .08);
+    --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .08), 0 22px 54px rgb(var(--v-shadow-color) / .14);
+    --v-radius: 16px;
+    /* мелкие кегли не ниже 13 и 15 px */
+    --v-t-xs: clamp(0.8125rem, 0.79rem + 0.15vw, 0.85rem);
+    --v-t-sm: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+    --v-section: clamp(3.5rem, 8vw, 7rem);
+  }
+  html, body { margin: 0; background: #f4f5f9; }
+  .v-page .v-lede { font-weight: 400; }
+  .v-page .v-label { font-weight: 600; }
+  .v-page .v-btn { font-size: var(--v-t-sm); }
+  .nowrap { white-space: nowrap; }
+  .q { color: var(--v-accent-deep); }   /* номер вопроса в лейбле */
+
+  /* ---- шапка: марка, пять вопросов, телефон, одна кнопка ------------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: var(--v-4);
+    padding: var(--v-3) var(--v-gutter);
+    background: rgb(244 245 249 / 0); transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(244 245 249 / .86); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); letter-spacing: -0.01em; text-decoration: none; display: inline-flex; align-items: center; gap: .5em; min-height: 44px; white-space: nowrap; }
+  .bar__mark i { width: .8em; height: .8em; border-radius: .3em; background: var(--v-accent); display: inline-block; position: relative; flex: none; }
+  .bar__mark i::after { content: ""; position: absolute; left: 50%; top: 50%; width: 34%; height: 34%; margin: -17% 0 0 -17%; border-radius: 50%; background: var(--v-canvas); }
+  .qnav { display: flex; gap: var(--v-5); font-size: var(--v-t-sm); }
+  .qnav a { text-decoration: none; color: var(--v-ink-soft); display: inline-flex; align-items: center; gap: .4em; min-height: 44px; transition: color .16s var(--v-ease-out); }
+  .qnav a b { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xs); color: var(--v-accent-deep); font-variant-numeric: tabular-nums; }
+  @media (hover: hover) and (pointer: fine) { .qnav a:hover { color: var(--v-ink); } }
+  .bar__right { display: flex; align-items: center; gap: var(--v-4); }
+  .bar__tel { text-decoration: none; font-weight: 600; font-size: var(--v-t-sm); color: var(--v-ink); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); white-space: nowrap; }
+  .bar .v-btn { padding: .7em 1.3em; }
+  @media (max-width: 1100px) { .qnav { display: none; } .v-page .hero__pluses { grid-template-columns: 1fr; } }
+  @media (max-width: 700px) {
+    .bar__tel { display: none; }
+    .bar__mark { font-size: 1.1rem; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; }
+    .bar__right { gap: var(--v-2); }
+  }
+
+  /* ---- 1 · hero: кресло в светлом кабинете, колонка с нотками, текст слева на стене ---- */
+  .hero__back img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 62% 50%; }
+  /* страховка под текст: лёгкая колонка света слева, не затемнение */
+  .hero__col { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(244 245 249 / .72) 0%, rgb(244 245 249 / .45) 34%, transparent 62%); }
+  .hero__copy { bottom: clamp(3.5rem, 10vh, 7rem); max-width: min(44rem, 88vw); }
+  .hero__label { display: block; margin-bottom: var(--v-4); }
+  .hero__copy .v-display { font-size: clamp(2.3rem, 1.3rem + 3.3vw, 4.3rem); line-height: 1.02; max-width: 19ch; }
+  .hero__copy .v-lede { margin-top: var(--v-5); max-width: 40ch; color: var(--v-ink); }
+  /* преимущества на первом экране: две колонки коротких строк, без карточек */
+  .v-page .hero__pluses { margin-top: 1.75rem; display: grid; grid-template-columns: max-content max-content; justify-content: start; gap: var(--v-2) var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink); }
+  .hero__pluses li { display: flex; gap: .55em; align-items: baseline; }
+  .hero__pluses li::before { content: ""; flex: none; width: .55em; height: .55em; border-radius: 50%; background: var(--v-accent); transform: translateY(-.1em); }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  /* нотки из колонки: контейнер ставится JS-ом на колонку в кадре (data-spk на картинке), едет вместе со слоем параллакса */
+  .notes { position: absolute; z-index: 2; width: 0; height: 0; pointer-events: none; }
+  .notes span { position: absolute; left: 0; bottom: 0; font-family: var(--v-font-display); font-weight: 500; font-size: var(--s, 1.9rem); line-height: 1; color: var(--v-accent-deep); opacity: 0; transform: translate(-50%, 0);
+    text-shadow: 0 1px 0 rgb(255 255 255 / .7), 0 0 12px rgb(255 255 255 / .8);
+    animation: note-rise var(--dur, 3.8s) ease-out var(--delay, 0s) infinite; }
+  @keyframes note-rise {
+    0%   { opacity: 0; transform: translate(-50%, 0) scale(.6) rotate(0deg); }
+    12%  { opacity: .95; }
+    70%  { opacity: .55; }
+    100% { opacity: 0; transform: translate(calc(-50% + var(--dx, 0px)), var(--dy, -120px)) scale(1.05) rotate(var(--rot, 0deg)); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .notes span { animation: none; opacity: .75; transform: translate(calc(-50% + var(--dx, 0px)), calc(var(--dy, -120px) * .45)) rotate(var(--rot, 0deg)); }
+    .notes span:nth-child(n + 3) { display: none; }
+  }
+  .hero__tel { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
+  .hero__tel b { font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  .hero__note { position: absolute; z-index: 3; right: var(--v-gutter); top: clamp(5rem, 14vh, 9rem); text-align: right; display: grid; gap: .25em; max-width: 22ch; }
+  .hero__note .v-nums { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); }
+  .hero__note span:last-child { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  /* вторая реплика: пять вопросов до кресла */
+  .hero__five { bottom: clamp(4.5rem, 14vh, 9rem); max-width: min(40rem, 88vw); }
+  .hero__five .v-display { font-size: var(--v-t-2xl); line-height: 1.04; max-width: 16ch; }
+  .hero__five .v-lede { margin-top: var(--v-4); max-width: 34ch; }
+  .hero__five ol { display: flex; flex-wrap: wrap; gap: .5em .9em; margin-top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .hero__five ol li { display: inline-flex; align-items: baseline; gap: .35em; }
+  .hero__five ol b { font-family: var(--v-font-display); font-weight: 500; color: var(--v-accent-deep); font-size: var(--v-t-xs); }
+  @media (max-width: 860px) {
+    .hero__back img { object-position: 50% 78%; }
+    .hero__col { background: linear-gradient(to bottom, rgb(244 245 249 / .55) 0%, rgb(244 245 249 / .25) 45%, transparent 70%); }
+    .hero__copy, .hero__five { bottom: auto; top: clamp(5rem, 10vh, 6.5rem); }
+    .hero__copy .v-display { font-size: clamp(1.9rem, 1.2rem + 3.4vw, 2.6rem); max-width: none; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-3); max-width: 32ch; }
+    .v-page .hero__pluses { grid-template-columns: 1fr; gap: var(--v-1); margin-top: 1.25rem; }
+    .hero__label { margin-bottom: var(--v-3); }
+    .hero__cta { margin-top: var(--v-4); gap: var(--v-2) var(--v-5); }
+    .notes span { --s: 1.3rem; }
+    .hero__note { display: none; }
+    .hero__five .v-display { font-size: var(--v-t-xl); }
+  }
+
+  /* ---- 2 · вопрос 1 «Будет больно?»: фото слева, доводы справа ----------------------- */
+  /* услуги клиники: «меню» крупной типографикой, строка = услуга + УТП + цена от */
+  .usl__head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); column-gap: var(--v-8); align-items: end; margin-bottom: var(--v-6); }
+  .usl__head .v-label { grid-column: 1 / -1; }
+  .usl__head .v-display { font-size: clamp(2rem, 1.2rem + 2.2vw, 3.1rem); }
+  .usl__head .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent-deep); }
+  .usl__head p { margin-top: 0; color: var(--v-ink-soft); max-width: 60ch; font-size: var(--v-t-md, 1.125rem); text-wrap: pretty; }
+  .usl__list { list-style: none; margin: 0; padding: 0; counter-reset: usl; border-bottom: 1px solid var(--v-hair); display: grid; grid-template-columns: 3.2rem minmax(0, 1.05fr) minmax(0, 1.35fr) auto; column-gap: var(--v-6); }
+  .usl__list li { counter-increment: usl; position: relative; grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; align-items: baseline;
+    padding: var(--v-5) var(--v-4); margin: 0 calc(-1 * var(--v-4)); border-top: 1px solid var(--v-hair); transition: background-color .35s ease, box-shadow .35s ease; }
+  .usl__list li::before { content: counter(usl, decimal-leading-zero); font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-sm); color: var(--v-accent-deep); font-variant-numeric: tabular-nums; }
+  .usl__list h3 { font-family: var(--v-font-display); font-weight: 500; font-size: clamp(1.45rem, 1rem + 1.3vw, 2.1rem); letter-spacing: var(--v-track-tight); line-height: 1.1; text-wrap: balance; transition: transform .35s ease, color .35s ease; }
+  .usl__list p { color: var(--v-ink-soft); max-width: 52ch; text-wrap: pretty; }
+  .usl__list .sum { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); color: var(--v-accent-deep); white-space: nowrap; justify-self: end; text-align: right; }
+  @media (hover: hover) {
+    .usl__list li:hover { border-radius: calc(var(--v-radius) - 6px); background: var(--v-canvas); box-shadow: inset 3px 0 0 var(--v-accent); border-top-color: transparent; }
+    .usl__list li:hover + li { border-top-color: transparent; }
+    .usl__list li:hover h3 { transform: translateX(.35rem); color: var(--v-accent-deep); }
+  }
+  .usl__foot { margin-top: var(--v-7); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--v-5) var(--v-8); }
+  .usl__foot p { color: var(--v-ink-soft); max-width: 62ch; text-wrap: pretty; }
+  @media (max-width: 1000px) {
+    .usl__head { grid-template-columns: 1fr; row-gap: var(--v-4); }
+    .usl__list { display: block; }
+    .usl__list li { grid-template-columns: 2.4rem minmax(0, 1fr) auto; row-gap: var(--v-2); padding: var(--v-4) var(--v-3); margin: 0 calc(-1 * var(--v-3)); }
+    .usl__list p { grid-column: 2 / -1; grid-row: 2; }
+    .usl__list .sum { font-size: var(--v-t-base); }
+  }
+  @media (max-width: 600px) {
+    .usl__list li { grid-template-columns: 2rem minmax(0, 1fr); }
+    .usl__list h3 { font-size: 1.3rem; }
+    .usl__list p { font-size: .95rem; grid-column: 2; grid-row: auto; }
+    .usl__list .sum { grid-column: 2; justify-self: start; min-width: 0; text-align: left; }
+    .usl__foot .v-btn { width: 100%; justify-content: center; }
+  }
+  .pain { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: var(--v-8) var(--v-9); align-items: start; }
+  .pain__fig { aspect-ratio: 3 / 4; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); background: var(--v-surface); max-width: 26rem; position: sticky; top: clamp(5rem, 12vh, 7rem); }
+  .pain__fig .v-layer img { width: 100%; height: 118%; left: 0; top: -9%; object-fit: cover; }
+  .pain__fig figcaption { position: absolute; z-index: 3; left: var(--v-5); right: var(--v-5); top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 26ch; }
+  .pain__copy .v-label { display: block; margin-bottom: var(--v-5); }
+  .pain__copy > p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 46ch; text-wrap: pretty; }
+  .rows { margin-top: var(--v-7); }
+  .rows li { padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--v-1) var(--v-5); align-items: baseline; }
+  .rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .rows li > span { grid-row: 1 / span 2; font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-sm); color: var(--v-accent-deep); font-variant-numeric: tabular-nums; padding-top: .2em; white-space: nowrap; }
+  .rows h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); letter-spacing: -0.01em; line-height: 1.15; }
+  .rows p { color: var(--v-ink-soft); max-width: 48ch; text-wrap: pretty; }
+  .turn { margin-top: var(--v-7); padding: var(--v-5) var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1); display: grid; gap: var(--v-3); max-width: 44rem; }
+  .turn .v-label { color: var(--v-accent-deep); }
+  .turn p { font-size: var(--v-t-lg); line-height: 1.35; text-wrap: pretty; }
+  .turn small { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .pain { grid-template-columns: 1fr; gap: var(--v-6); }
+    .pain__fig { position: relative; top: auto; max-width: 20rem; aspect-ratio: 4 / 5; }
+    .rows h3 { font-size: var(--v-t-base); }
+    .turn { padding: var(--v-5); }
+  }
+
+  /* ---- 3 · вопрос 2 «Что вы будете делать?»: пять шагов вдоль линии, лоток справа ---- */
+  .visit { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: var(--v-8) var(--v-9); align-items: start; }
+  .visit__copy .v-label { display: block; margin-bottom: var(--v-5); }
+  .visit__copy > p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 46ch; text-wrap: pretty; }
+  .steps { margin-top: var(--v-7); position: relative; padding-left: 2.6rem; }
+  .steps::before { content: ""; position: absolute; left: .55rem; top: .6rem; bottom: .6rem; width: 1px; background: var(--v-hair-strong); }
+  .steps li { position: relative; padding: 0 0 var(--v-6); display: grid; gap: var(--v-1); }
+  .steps li:last-child { padding-bottom: 0; }
+  .steps li::before { content: ""; position: absolute; left: -2.6rem; top: .5rem; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: var(--v-canvas); box-shadow: inset 0 0 0 1px var(--v-hair-strong); }
+  .steps li::after { content: ""; position: absolute; left: calc(-2.6rem + .35rem); top: calc(.5rem + .35rem); width: .4rem; height: .4rem; border-radius: 50%; background: var(--v-accent); }
+  .steps h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); letter-spacing: -0.01em; line-height: 1.15; display: flex; gap: .6em; align-items: baseline; }
+  .steps h3 small { font-family: var(--v-font-text); font-weight: 600; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-accent-deep); }
+  .steps p { color: var(--v-ink-soft); max-width: 46ch; text-wrap: pretty; }
+  .visit__fig { position: sticky; top: clamp(5rem, 12vh, 7rem); aspect-ratio: 4 / 3; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); background: var(--v-surface); }
+  .visit__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .visit__fig figcaption { position: absolute; left: var(--v-5); right: 40%; top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-5); margin-top: var(--v-7); }
+  .cta span { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 36ch; text-wrap: pretty; }
+  @media (max-width: 860px) {
+    .visit { grid-template-columns: 1fr; gap: var(--v-6); }
+    .visit__fig { position: relative; top: auto; aspect-ratio: 16 / 11; }
+    .visit__fig figcaption { right: var(--v-5); }
+    .steps h3 { font-size: var(--v-t-base); }
+  }
+
+  /* ---- 4 · вопрос 3 «Сколько это стоит?»: фирменный ход - зубная формула ------------- */
+  .price { height: 100%; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--v-8); align-items: center; padding: 5rem var(--v-gutter) var(--v-6); }
+  .price__copy { position: relative; align-self: center; }
+  .price__head .v-label { display: block; margin-bottom: var(--v-5); }
+  .price__head p { margin-top: var(--v-4); color: var(--v-ink-soft); max-width: 40ch; text-wrap: pretty; }
+  .price__stack { position: relative; margin-top: var(--v-7); min-height: 13rem; }
+  .price__item { position: absolute; left: 0; right: 0; top: 0; display: grid; gap: var(--v-2); max-width: 40rem; }
+  .price__item h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); letter-spacing: -0.015em; line-height: 1.08; display: flex; flex-wrap: wrap; align-items: baseline; gap: .2em .7em; }
+  .price__item h3 .sum { font-size: var(--v-t-lg); color: var(--v-accent-deep); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .price__item p { color: var(--v-ink-soft); max-width: 42ch; text-wrap: pretty; }
+  .price__item .where { display: inline-flex; align-items: center; gap: .5em; margin-top: var(--v-2); font-size: var(--v-t-sm); color: var(--v-ink); }
+  .price__item .where i { width: .6em; height: .6em; border-radius: 50%; background: var(--v-accent); flex: none; }
+  /* формула */
+  .chart { position: relative; justify-self: center; width: min(100%, 34rem); }
+  .chart__svg { width: 100%; height: auto; display: block; }
+  .chart__cap { margin-top: var(--v-3); display: flex; justify-content: space-between; gap: var(--v-4); font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); }
+  .t__base { fill: var(--v-surface); stroke: var(--v-hair-strong); stroke-width: 1.2; transition: opacity .5s var(--v-ease-out), stroke-dasharray .5s; }
+  .t__hi { fill: var(--v-accent); opacity: 0; transition: opacity .55s var(--v-ease-out); transition-delay: calc(var(--i, 0) * 28ms); }
+  /* состояния: s0 осмотр (контур), s1 гигиена (вся формула мягко), s2 кариес (3.6), s3 удаление (2.6), s4 коронка (4.6) */
+  .chart.is-s1 .t__hi { opacity: .34; }
+  .chart.is-s2 .t[data-n="36"] .t__hi { opacity: .95; }
+  .chart.is-s3 .t[data-n="26"] .t__base { opacity: .28; stroke-dasharray: 4 4; }
+  .chart.is-s4 .t[data-n="46"] .t__hi { opacity: 1; }
+  .chart.is-s4 .t[data-n="46"] .t__base { stroke: var(--v-accent-deep); }
+  /* кольцо-указатель вокруг активного зуба */
+  .chart .ring { position: absolute; width: 11%; aspect-ratio: 1; border-radius: 50%; box-shadow: 0 0 0 2px var(--v-accent); opacity: 0; transition: opacity .4s var(--v-ease-out), transform .6s var(--v-ease-out); pointer-events: none; transform: translate(-50%, -50%); }
+  .chart.is-s2 .ring, .chart.is-s3 .ring, .chart.is-s4 .ring { opacity: 1; }
+  @media (max-width: 860px) {
+    .price { grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); gap: var(--v-4); align-items: start; padding: 4.6rem var(--v-gutter) var(--v-5); }
+    .chart { width: min(100%, 22rem); max-height: 38svh; order: -1; justify-self: start; }
+    .chart__svg { max-height: 33svh; width: auto; margin-inline: auto; }
+    .chart__cap { margin-top: var(--v-2); }
+    .price__head .v-label { margin-bottom: var(--v-2); }
+    .price__head p { display: none; }
+    .price__stack { margin-top: var(--v-4); min-height: 12rem; }
+    .price__item h3 { font-size: var(--v-t-lg); }
+    .price__item p { font-size: var(--v-t-sm); max-width: none; }
+  }
+  @media (max-width: 860px) and (max-height: 720px) { .chart__svg { max-height: 28svh; } .price__item p { display: none; } }
+
+  /* ---- 5 · вопрос 4 «Кто будет лечить?»: карточки врачей, фото со спины, стерильность --- */
+  .who__head { max-width: 44rem; }
+  .who__head .v-label { display: block; margin-bottom: var(--v-5); }
+  .who__head p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 46ch; text-wrap: pretty; }
+  .who { margin-top: var(--v-7); display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: var(--v-8) var(--v-9); align-items: start; }
+  .who__fig { position: relative; aspect-ratio: 3 / 4; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); background: var(--v-surface); max-width: 24rem; }
+  .who__fig img { width: 100%; height: 100%; object-fit: cover; }
+  /* два портрета в одной рамке: фото меняется по клику на карточку врача (правка Евгения 19.09.2026) */
+  .v-page .who__ph { position: absolute; inset: 0; transition: opacity .6s var(--v-ease-out), transform .9s var(--v-ease-out); }
+  .v-page .who__ph--2 { opacity: 0; transform: scale(1.04); }
+  .who[data-doc="2"] .who__ph--1 { opacity: 0; transform: scale(1.04); }
+  .who[data-doc="2"] .who__ph--2 { opacity: 1; transform: none; }
+  .who__fig figcaption { position: absolute; left: var(--v-5); right: var(--v-5); top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 24ch; }
+  .docs { display: grid; gap: var(--v-5); }
+  /* tilt пишет transform сам: появление карточек только через opacity, без transition на transform */
+  .docs > .doc { transform: none; transition: opacity .62s var(--v-ease-out); }
+  .doc { display: grid; gap: var(--v-2); padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1); }
+  .doc[role="button"] { position: relative; cursor: pointer; transition: box-shadow .35s var(--v-ease-out), opacity .35s var(--v-ease-out); }
+  .doc[role="button"]:not(.is-on) { opacity: .72; }
+  .doc[role="button"].is-on { box-shadow: inset 3px 0 0 var(--v-accent), var(--v-e1); }
+  .doc[role="button"]:focus-visible { outline: 2px solid var(--v-accent); outline-offset: 3px; }
+  @media (hover: hover) { .doc[role="button"]:not(.is-on):hover { opacity: 1; } }
+  .docs > .docs__hint { font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); }
+  .doc--lead { padding: var(--v-7) var(--v-7) var(--v-6); }
+  .doc b { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); letter-spacing: -0.015em; line-height: 1.1; }
+  .doc--lead b { font-size: var(--v-t-2xl); }
+  .doc .spec { color: var(--v-ink); }
+  .doc .edu { color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .doc .says { margin-top: var(--v-3); padding-top: var(--v-3); border-top: 1px solid var(--v-hair); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 40ch; text-wrap: pretty; }
+  .clean { margin-top: var(--v-7); display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: var(--v-8) var(--v-9); align-items: center; }
+  .clean__fig { position: relative; aspect-ratio: 16 / 10; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); background: var(--v-surface); }
+  .clean__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .clean__fig figcaption { position: absolute; left: var(--v-5); top: var(--v-5); right: 50%; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .facts li { padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); display: grid; gap: var(--v-1); }
+  .facts li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .facts b { font-weight: 600; }
+  .facts span { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 44ch; }
+  .clean__copy h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); letter-spacing: -0.015em; line-height: 1.1; margin-bottom: var(--v-5); }
+  @media (max-width: 860px) {
+    .who { grid-template-columns: 1fr; gap: var(--v-6); margin-top: var(--v-7); }
+    .who__fig { max-width: 20rem; aspect-ratio: 4 / 5; }
+    .doc { padding: var(--v-5); }
+    .doc--lead { padding: var(--v-6) var(--v-5); }
+    .clean { grid-template-columns: 1fr; gap: var(--v-6); margin-top: var(--v-7); }
+    .clean__fig { aspect-ratio: 16 / 11; }
+    .clean__fig figcaption { right: var(--v-5); }
+  }
+
+  /* ---- 6 · отзывы с Яндекс.Карт (только настоящие, слоты) ------------------------- */
+  @property --r { syntax: "<number>"; inherits: false; initial-value: 0; }
+  .reviews__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--v-6) var(--v-8); align-items: end; margin-bottom: var(--v-7); }
+  .reviews__head .v-label { display: block; margin-bottom: var(--v-5); }
+  .reviews__rating { display: grid; grid-template-columns: auto auto; gap: var(--v-1) var(--v-4); align-items: center; font-size: var(--v-t-sm); }
+  .reviews__num { grid-row: 1 / span 2; font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-2xl); line-height: 1; color: var(--v-ink); }
+  .reviews__rating a { color: var(--v-ink); display: inline-block; padding-block: .2em; }
+  .reviews__stars { --size: 1.1rem; display: inline-block; width: calc(var(--size) * 5); height: var(--size);
+    background: linear-gradient(90deg, var(--v-accent) calc(var(--r, 0) / 5 * 100%), var(--v-hair-strong) 0);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x; }
+  .reviews__stars--sm { --size: .8rem; vertical-align: middle; }
+  .reviews__list { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--v-6); align-items: start; }
+  .reviews__item { padding-top: var(--v-5); border-top: 1px solid var(--v-hair); }
+  .reviews__item--big .reviews__text { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); line-height: 1.35; letter-spacing: -0.01em; }
+  .reviews__text { text-wrap: pretty; }
+  .reviews__meta { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .reviews__meta b { color: var(--v-ink); font-weight: 600; }
+  .reviews__fact { margin-top: var(--v-7); padding-top: var(--v-5); border-top: 1px solid var(--v-hair); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .reviews__list { grid-template-columns: 1fr; } .reviews__head { grid-template-columns: 1fr; align-items: start; margin-bottom: var(--v-6); } }
+
+  /* ---- 7 · вопрос 5 «Когда можно прийти?»: кабинет вечером за текстом, колонка с нотками, футер внутри сцены --- */
+  .close__back img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 64% 50%; }
+  /* колонка света слева под текст: фото остаётся видно справа (кресло, окно, колонка) */
+  .close__col { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(244 245 249 / .9) 0%, rgb(244 245 249 / .78) 40%, rgb(244 245 249 / .3) 62%, transparent 78%); }
+  .close { position: relative; z-index: 3; height: 100%; display: grid; grid-template-rows: 1fr auto; padding: 0 var(--v-gutter);
+    background: radial-gradient(60rem 40rem at calc(var(--v-mx, .7) * 100%) calc(var(--v-my, .4) * 100%), rgb(59 79 163 / .12), transparent 60%); }
+  .close__inner { align-self: center; max-width: 46rem; padding-top: var(--v-9); }
+  .close__inner .v-label { display: block; margin-bottom: var(--v-5); }
+  .close__inner .v-display { font-size: var(--v-t-3xl); line-height: 1; max-width: 14ch; }
+  .close__inner p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 40ch; text-wrap: pretty; }
+  .close__btns { margin-top: var(--v-6); display: flex; flex-wrap: wrap; gap: var(--v-3); }
+  .close__meta { margin-top: var(--v-7); display: grid; grid-template-columns: repeat(2, minmax(0, auto)); gap: var(--v-2) var(--v-7); justify-content: start; color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .close__tel { grid-column: 1 / -1; font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); text-decoration: none; color: var(--v-ink); display: inline-block; padding-block: .3em; margin-bottom: var(--v-1); letter-spacing: -0.01em; justify-self: start; }
+  .close__meta b { color: var(--v-ink); font-weight: 600; }
+  .close__meta a:not(.close__tel) { color: var(--v-ink); display: inline-block; padding-block: .25em; }
+  .foot { display: grid; grid-template-columns: auto 1fr auto; gap: var(--v-4) var(--v-6); align-items: baseline; margin: 0 calc(-1 * var(--v-gutter)); padding: var(--v-6) var(--v-gutter); border-top: 1px solid var(--v-hair);
+    background: rgb(244 245 249 / .84); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .foot__warn { grid-column: 1 / -1; color: var(--v-ink); font-weight: 600; letter-spacing: .01em; }
+  @media (max-width: 860px) {
+    .close__back img { object-position: 74% 50%; }
+    .close__col { background: linear-gradient(to bottom, rgb(244 245 249 / .92) 0%, rgb(244 245 249 / .84) 55%, rgb(244 245 249 / .5) 100%); }
+    .close__inner { padding-top: var(--v-8); }
+    .close__inner .v-display { font-size: var(--v-t-2xl); max-width: none; }
+    .close__meta { grid-template-columns: 1fr; gap: var(--v-2); margin-top: var(--v-6); }
+    .close__tel { font-size: var(--v-t-lg); }
+    .foot { grid-template-columns: 1fr; gap: var(--v-2); font-size: var(--v-t-sm); padding: var(--v-5) var(--v-gutter) calc(var(--v-5) + env(safe-area-inset-bottom)); }
+    .foot__more { display: none; }
+  }
+  /* ---- клиника: картинка рядом с ценами вместо зубной формулы ---- */
+  .pfig { position: relative; justify-self: center; width: min(100%, 34rem); aspect-ratio: 4 / 3; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); background: var(--v-surface); }
+  .pfig img { width: 100%; height: 100%; object-fit: cover; }
+  .pfig figcaption { position: absolute; left: var(--v-5); right: var(--v-5); bottom: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink); background: rgb(255 255 255 / .8); padding: .45em .8em; border-radius: 10px; width: fit-content; }
+  @media (max-width: 860px) { .pfig { width: min(100%, 22rem); max-height: 30svh; order: -1; justify-self: start; } }
+  .hero__back img { object-position: 70% 50%; }
+  @media (max-width: 860px) { .hero__back img { object-position: 78% 50%; } }
+  .close__back img { object-position: 60% 50%; }
+  .close__col { background: linear-gradient(to right, rgb(244 245 249 / .96) 0%, rgb(244 245 249 / .9) 50%, rgb(244 245 249 / .62) 74%, rgb(244 245 249 / .28) 100%); }
+  .close__meta { color: var(--v-ink); }
+
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>Эко клиника</a>
+    <nav class="qnav" aria-label="Разделы">
+      <a href="#uslugi">Услуги</a>
+      <a href="#ceny">Цены</a>
+      <a href="#napravleniya">Направления</a>
+      <a href="#vizit">Как нас найти</a>
+    </nav>
+    <div class="bar__right">
+      <a class="bar__tel" href="tel:+79039670680">+7 (903) 967-06-80</a>
+      <a class="v-btn" href="tel:+79039670680">Позвонить</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1 · первый экран: светлый кабинет, оффер слева -->
+    <section id="top" data-v-act="pin" data-v-span="2.2" data-v-drift="#f4f5f9" aria-label="Эко клиника">
+      <div data-v-stage>
+        <div class="v-layer hero__back" data-v-parallax="-0.45">
+          <img id="hero-img" src="assets/hero.webp" alt="Светлый кабинет клиники: кушетка, окно с мягким дневным светом, бамбук" width="1920" height="1080" fetchpriority="high">
+        </div>
+        <div class="hero__col" aria-hidden="true"></div>
+
+        <div class="hero__note" data-v-cue="0 0.6 0" data-v-rise="0">
+          <span class="v-label">Часы приёма</span>
+          <span class="v-nums">Пн-Пт 9:00-18:00</span>
+          <span>Суббота и воскресенье выходные</span>
+        </div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.62 0 0.1">
+          <span class="v-label hero__label">Клиника восточной медицины</span>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Иглоукалывание и восточная медицина в Москве</h1>
+          <p class="v-lede">Приём рефлексотерапевта, мануального терапевта, невролога и психолога у метро Беговая. Прайс-лист на сайте, запись по телефону.</p>
+          <ul class="hero__pluses" aria-label="Коротко о клинике">
+            <li>Иглоукалывание как на Востоке</li>
+            <li>Прайс-лист на сайте</li>
+            <li>Метро Беговая, бесплатная парковка рядом</li>
+            <li>Приём врачей и восточные методики</li>
+          </ul>
+          <div class="hero__cta">
+            <a class="v-btn" href="tel:+79039670680">Позвонить</a>
+            <a class="hero__tel" href="sms:+79039670680?&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F.">или <b>напишите SMS</b></a>
+          </div>
+        </div>
+
+        <div class="v-copy v-copy--lead hero__five" data-v-cue="0.64 0.96 0.06 0.04">
+          <h2 class="v-display v-display--lg">Четыре вопроса до визита</h2>
+          <p class="v-lede">Отвечаем на них здесь, чтобы вы пришли уже зная, что вас ждёт.</p>
+          <ol>
+            <li><b>1</b>Что у вас делают?</li>
+            <li><b>2</b>Сколько это стоит?</li>
+            <li><b>3</b>Какие направления?</li>
+            <li><b>4</b>Как вас найти?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · услуги списком -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#ffffff" id="uslugi" aria-label="Услуги клиники">
+      <div class="v-wrap usl">
+        <div class="usl__head" data-v-in data-v-stagger="70">
+          <span class="v-label"><span class="q">Вопрос 1</span> · Что у вас делают?</span>
+          <h2 class="v-display v-display--lg">Услуги клиники: приём врачей и восточные методики</h2>
+          <p>Цены из прайс-листа клиники. Запись и уточнение цены по телефону.</p>
+        </div>
+        <ol class="usl__list" data-v-in data-v-stagger="55">
+          <li><h3>Приём рефлексотерапевта</h3><p>Первичный приём 3&nbsp;000&nbsp;₽, повторный 1&nbsp;500&nbsp;₽.</p><span class="sum v-nums">3&nbsp;000&nbsp;₽</span></li>
+          <li><h3>Иглоукалывание</h3><p>Сеанс иглоукалывания. Комплект с двух сторон 7&nbsp;500&nbsp;₽.</p><span class="sum v-nums">4&nbsp;500&nbsp;₽</span></li>
+          <li><h3>Электропунктура и фармакопунктура</h3><p>Электропунктура аппаратная 2&nbsp;500&nbsp;₽, фармакопунктура 1&nbsp;750&nbsp;₽ за ампулу.</p><span class="sum v-nums">от 1&nbsp;750&nbsp;₽</span></li>
+          <li><h3>Точечный массаж и баночное кровопускание</h3><p>Точечный массаж и баночное кровопускание, каждая процедура.</p><span class="sum v-nums">3&nbsp;000&nbsp;₽</span></li>
+          <li><h3>Гомеосиниатрия</h3><p>Микроинъекции по точкам.</p><span class="sum v-nums">3&nbsp;500&nbsp;₽</span></li>
+          <li><h3>Мануальная терапия</h3><p>Первичный приём 3&nbsp;000&nbsp;₽, сеанс врача на один час 10&nbsp;000&nbsp;₽.</p><span class="sum v-nums">от 3&nbsp;000&nbsp;₽</span></li>
+          <li><h3>Инъекции и капельницы</h3><p>Внутримышечные инъекции 2&nbsp;500&nbsp;₽, капельница с препаратом 6&nbsp;000&nbsp;₽, авторские капельницы 7&nbsp;000&nbsp;₽.</p><span class="sum v-nums">от 2&nbsp;500&nbsp;₽</span></li>
+          <li><h3>Невролог и психолог</h3><p>Приём невролога и психотерапевта 3&nbsp;000&nbsp;₽, психолога 5&nbsp;000&nbsp;₽.</p><span class="sum v-nums">от 3&nbsp;000&nbsp;₽</span></li>
+        </ol>
+        <div class="usl__foot" data-v-in data-v-in-self>
+          <p>Не нашли свою ситуацию или не знаете, с чего начать? Позвоните, и вам подскажут, к какому врачу записаться.</p>
+          <a class="v-btn v-btn--ghost" href="tel:+79039670680">Позвонить</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · цены: пять реплик в сцене, справа кадр -->
+    <section id="ceny" data-v-act="pin" data-v-span="3.2" data-v-drift="#eceef6" aria-label="Сколько это стоит?">
+      <div data-v-stage>
+        <div class="price">
+          <div class="price__copy">
+            <div class="price__head" data-v-cue="0 1 0 0" data-v-rise="0">
+              <span class="v-label"><span class="q">Вопрос 2</span> · Сколько это стоит?</span>
+              <h2 class="v-display v-display--lg">Цены в прайс-листе клиники</h2>
+              <p>Выберите нужное, а на странице ниже найдёте весь перечень. Уточнить цену и записаться можно по телефону.</p>
+            </div>
+            <div class="price__stack">
+              <div class="price__item" data-v-cue="0 0.22 0 0.04">
+                <h3>Рефлексотерапевт <span class="sum v-nums">3&nbsp;000&nbsp;₽</span></h3>
+                <p>Первичный приём. Повторный приём стоит 1&nbsp;500&nbsp;₽.</p>
+              </div>
+              <div class="price__item" data-v-cue="0.2 0.42 0.04 0.04">
+                <h3>Иглоукалывание <span class="sum v-nums">4&nbsp;500&nbsp;₽</span></h3>
+                <p>Один сеанс. Комплект с двух сторон 7&nbsp;500&nbsp;₽.</p>
+              </div>
+              <div class="price__item" data-v-cue="0.4 0.62 0.04 0.04">
+                <h3>Мануальный терапевт <span class="sum v-nums">3&nbsp;000&nbsp;₽</span></h3>
+                <p>Первичный приём. Часовой сеанс врача 10&nbsp;000&nbsp;₽.</p>
+              </div>
+              <div class="price__item" data-v-cue="0.6 0.82 0.04 0.04">
+                <h3>Психолог <span class="sum v-nums">5&nbsp;000&nbsp;₽</span></h3>
+                <p>Первичный или консультационный приём. Психотерапевт 3&nbsp;000&nbsp;₽.</p>
+              </div>
+              <div class="price__item" data-v-cue="0.8 1 0.04 0">
+                <h3>Капельница <span class="sum v-nums">от 6&nbsp;000&nbsp;₽</span></h3>
+                <p>Капельница с препаратом 6&nbsp;000&nbsp;₽, авторские капельницы 7&nbsp;000&nbsp;₽.</p>
+              </div>
+            </div>
+          </div>
+          <figure class="pfig" data-v-reveal="left" data-v-reveal-at="0 0.3">
+            <img src="assets/igly.webp" alt="Лоток с принадлежностями для иглоукалывания на льняной ткани" width="1200" height="900" loading="lazy" decoding="async">
+            <figcaption>Иглоукалывание</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · направления -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f4f5f9" id="napravleniya" aria-label="Направления клиники">
+      <div class="v-wrap">
+        <div class="who__head" data-v-in data-v-stagger="70">
+          <span class="v-label"><span class="q">Вопрос 3</span> · Какие направления?</span>
+          <h2 class="v-display v-display--lg">Направления клиники</h2>
+        </div>
+        <div class="clean">
+          <figure class="clean__fig" data-v-reveal="left" data-v-reveal-at="0.12 0.5">
+            <img src="assets/kabinet.webp" alt="Кабинет врача: стол и два стула у окна с мягким светом" width="1200" height="900" loading="lazy" decoding="async">
+            <figcaption>Кабинет</figcaption>
+          </figure>
+          <div class="clean__copy" data-v-in data-v-stagger="70">
+            <ul class="facts">
+              <li><b>Приём врачей</b><span>Рефлексотерапевт, мануальный терапевт, невролог, психотерапевт и психолог.</span></li>
+              <li><b>Иглоукалывание и восточные методики</b><span>Иглоукалывание, электропунктура, фармакопунктура, гомеосиниатрия, точечный массаж.</span></li>
+              <li><b>Капельницы и инъекции</b><span>Внутримышечные инъекции и капельницы, перечень и цены в прайс-листе.</span></li>
+              <li><b>Мануальная терапия</b><span>Приём и часовой сеанс, изготовление ортопедических стелек.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · как нас найти -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#eceef6" id="vizit" aria-label="Как нас найти">
+      <div class="v-wrap visit">
+        <div class="visit__copy" data-v-in data-v-stagger="70">
+          <span class="v-label"><span class="q">Вопрос 4</span> · Как вас найти?</span>
+          <h2 class="v-display v-display--lg">От метро Беговая до клиники</h2>
+          <p>Четыре шага. Рядом с пешеходным переходом бесплатная парковка.</p>
+          <ol class="steps">
+            <li><h3><small>Шаг 1</small>Метро Беговая</h3><p>Первый вагон из центра.</p></li>
+            <li><h3><small>Шаг 2</small>Хорошёвское шоссе</h3><p>Налево, до второго светофора.</p></li>
+            <li><h3><small>Шаг 3</small>2-й Хорошёвский проезд</h3><p>На втором светофоре налево, дом 7, корпус 1.</p></li>
+            <li><h3><small>Шаг 4</small>Подъезд 6</h3><p>Клиника в корпусе 1, подъезд 6.</p></li>
+          </ol>
+          <div class="cta">
+            <a class="v-btn" href="tel:+79039670680">Позвонить</a>
+            <span>Запись и уточнение цены по телефону +7 (903) 967-06-80.</span>
+          </div>
+        </div>
+        <figure class="visit__fig" data-v-reveal="left" data-v-reveal-at="0.1 0.42">
+          <img src="assets/priemnaya.webp" alt="Уголок приёмной: стол, чайник, растение и синее кресло у окна" width="1200" height="900" loading="lazy" decoding="async">
+          <figcaption>Приёмная</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 6 · действие: финал держит реплику -->
+    <section data-v-act="pin" data-v-span="1.3" data-v-drift="#f4f5f9" id="zapis" aria-label="Как записаться?">
+      <div data-v-stage>
+        <div class="v-layer close__back" data-v-parallax="-0.3">
+          <img id="final-img" src="assets/priemnaya.webp" alt="" width="1200" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="close__col" aria-hidden="true"></div>
+        <div class="close" data-v-spotlight>
+          <div class="close__inner">
+            <div data-v-cue="0.04">
+              <span class="v-label">Запись</span>
+              <h2 class="v-display v-display--xl">Позвоните или напишите</h2>
+              <p>Подскажем время приёма и ответим на вопросы до визита. Можно отправить SMS, текст уже готов.</p>
+              <div class="close__btns">
+                <a class="v-btn" href="tel:+79039670680" data-v-magnet="0.22" data-v-rise="0">Позвонить</a>
+                <a class="v-btn v-btn--ghost" href="sms:+79039670680?&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F.">Написать SMS</a>
+              </div>
+            </div>
+            <div class="close__meta" data-v-cue="0.1">
+              <a class="close__tel" href="tel:+79039670680">+7 (903) 967-06-80</a>
+              <span><b>2-й Хорошёвский проезд, дом 7, корпус 1, подъезд 6</b>, Москва</span>
+              <span>Пн-Пт 9:00-18:00, Сб и Вс выходной</span>
+              <span>Метро Беговая, бесплатная парковка рядом</span>
+            </div>
+          </div>
+          <footer class="foot">
+            <span>Эко клиника · Москва</span>
+            <span class="foot__more">Клиника восточной медицины</span>
+            <span>Лицензия: уточнить</span>
+            <span class="foot__warn">Имеются противопоказания. Необходима консультация специалиста.</span>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.7');
+    document.getElementById('ceny').setAttribute('data-v-span', '2.7');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+  (function () {
+    var bar = document.querySelector('.bar'), on = null;
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+  })();
+</script>
+</body>
+</html>
